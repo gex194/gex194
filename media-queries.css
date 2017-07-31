@@ -317,5 +317,33 @@ and (max-width : 1024px)  {
 	cursor:pointer;
 	display:none; /* в oбычнoм сoстoянии её нет) */
 }
-
+    #line1 {
+        display:none;
+    }
+    
+    #line2 {
+        display:none;
+    }
+    
+    #line3 {
+        display:none;
+    }
+    
+    #line1-tablet {
+        top:932px;
+        left:11px;
+        position:relative; display:inline;
+    }
+    
+    #line2-tablet {
+        top:1292px;
+        left:11px;
+       position:relative; display:inline;
+    }
+    
+    #line3-tablet {
+        top:1572px;
+        left:11px;
+       position:relative; display:inline;
+    }
 }

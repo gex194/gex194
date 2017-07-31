@@ -622,6 +622,37 @@ input[type="submit"] {
     padding-bottom:40px;
 }
 
+/* LINES */
+#line1 {
+    position:relative;
+    top:992px;
+    left:11px;
+}
+
+#line2 {
+    position:relative;
+    top:1160px;
+    left:11px;
+}
+
+#line3 {
+    position:relative;
+    top:1315px;
+    left:11px;
+}
+
+#line1-tablet {
+    display:none;
+}
+
+#line2-tablet {
+    display:none;
+}
+
+#line3-tablet {
+    display:none;
+}
+
 
 div.errorMsg {color: red}
 .invalidElem {border: medium solid red}
