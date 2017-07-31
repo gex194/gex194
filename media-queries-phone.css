@@ -335,24 +335,25 @@ and (min-width : 320px)
     
     #modal_form #text-b {
     display:inline-block;
-    position:fixed;
-    left:37%;
-    top: 45%;
+    position:sticky;
+        z-index: 1;
+    left:35%;
+    top: 35%;
     margin-top: -98px;
-    margin-left:-79px;
-    width:315px;
+    margin-left:-19px;
+    width:300px;
     height:100px;
     background-color:#ffffff;
     font-size:30px;
 }
 
 #modal_form #text {
-    position:fixed;
+    position:sticky;
     margin-top: 0px;
     margin-left:-68px;
-    left:35%;
-    top:48%;
-    width:314px;
+    left:40%;
+    top:50%;
+    width:307px;
     height:50px;
     background-color:#ffffff;
     font-size:14px;
@@ -365,7 +366,7 @@ and (min-width : 320px)
 	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
 	border-radius: 5px;
 	border: 3px #000 solid;
-	background: #f3f3f3;
+	background: #ffffff;
 	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
 	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
 	left: 48%; /* пoлoвинa экрaнa слевa */
@@ -430,6 +431,6 @@ and (min-width : 320px)
         }
         
         #line3-tablet {
-            display:none;
+            display
         }
 }
