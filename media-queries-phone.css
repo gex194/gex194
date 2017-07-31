@@ -409,5 +409,27 @@ and (min-width : 320px)
 	cursor:pointer;
 	display:none; /* в oбычнoм сoстoянии её нет) */
 }
+        #line1 {
+            display:none;
+        } 
         
+        #line2 {
+            display:none;
+        }
+        
+        #line3 {
+            display:none;
+        }
+        
+        #line1-tablet {
+            display:none;
+        }
+        
+        #line2-tablet {
+            display:none;
+        }
+        
+        #line3-tablet {
+            display:none;
+        }
 }
