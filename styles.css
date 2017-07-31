@@ -1,0 +1,628 @@
+html,body{
+    font-family: 'PT Sans', sans-serif;
+    text-transform:uppercase;
+    text-align:center;
+    background-color:#f2f2f2;
+}
+
+
+p {
+    font-weight: 200;
+    font-size: 20px;
+    background-color:beige;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+li {
+    list-style-type:none;
+}
+
+textarea {
+    resize:none;
+}
+
+.layout-positioner {
+    background-color: #ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px dashed white;
+}
+
+.layout-positioner::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.menu {
+    font-size:17px;
+    font-weight: 700;
+    font-family: 'PT Sans', sans-serif;
+    display:inline-block;
+    background-color:white;
+    padding-top:10px;
+    padding-bottom:1px;
+}
+
+#modal_form #invalid {
+    font-size:40px;
+    display:inline;
+}
+.menu .main {
+    float:left;
+    margin-left:90px;
+}
+
+.menu .media {
+    margin-left:138px;
+    float:left;
+}
+
+.menu .academy {
+    float:right;
+    margin-right:90px;
+}
+
+.menu.reply {
+    margin-right:138px;
+    float:right;
+}
+
+.logo {
+    margin-top:50px;
+    position:relative;
+    width: 187px;
+    height: 11px;
+    left:507px;
+    top:-60px;
+}
+
+.sedona-image {
+    white-space:nowrap;
+    margin-top:-103px;
+}
+
+.content {
+
+    background-color:#ffffff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.content b {
+    margin-top:90px;
+    font-size:25px;
+}
+
+.content .text-desc {
+    margin-bottom:40px;
+}
+
+.content-row{
+    margin-top:40px;
+    display:inline;
+    width:100%;
+}
+
+.content .rate {
+    margin-left:200px;
+    font-size: 25px;
+    float:left;
+    display:inline-block;
+    white-space:nowrap;
+}
+
+.content .rate-form {
+    text-align:left;
+    display:inline-block;
+
+}
+
+.content .rate-form b{
+    text-transform:none;
+    font-size: 17px;
+}
+
+
+/* Radio Button */
+
+input[type="radio"] {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+input[type="radio"] + label {
+  cursor: pointer;
+}
+input[type="radio"]:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+input[type="radio"]:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 35px;
+}
+input[type="radio"]:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #CDD1DA;
+  border-radius: 50%;
+  background-color:lightgray;
+
+}
+input[type="radio"]:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -9px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: all .2s;
+}
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+input[type="radio"]:focus + label:before {
+}
+
+/* Checkbox1 */
+
+input[type="checkbox"]{
+    text-align:center;
+    display:none;            
+}
+input[type="checkbox"] + label{
+  font: 18px bold;
+  color: #444;
+  cursor: pointer;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 58px;
+    width: 58px;
+    margin: 0 5px 0 0;
+    background-color:#f3f3f3;
+}
+input[type="checkbox"] + label::before {
+    background-position: -38px -260px;    
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-image:url(tick.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .2s;
+}
+
+input[type="checkbox"]:disabled + label::before {
+    background-position: -152px -260px;
+}
+input[type="checkbox"]:checked:disabled + label::before {
+    background-color:black;
+    
+}
+
+.checkbox1 {
+    margin-right:110px;
+}
+
+.checkbox2 {
+    margin-right:110px;
+}
+
+.checkbox3 {
+    margin-right:110px;
+}
+.checkbox1 .text {
+    text-transform:none;
+    font-weight:700;
+    position:relative;
+    top:-25px;
+}
+
+.checkbox2 .text {
+    text-transform:none;
+    font-weight:700;
+    position:relative;
+    top:-25px;
+}
+
+.checkbox3 .text {
+    text-transform:none;
+    font-weight:700;
+    position:relative;
+    top:-25px;
+}
+
+.checkbox4 .text {
+    text-transform:none;
+    font-weight:700;
+    position:relative;
+    top:-25px;
+}
+
+#name1 {
+    margin-top: 20px;
+    display:inline-block;
+    background-color:#f2f2f2;
+    width:286px;
+    height: 40px;
+    white-space:nowrap;
+    
+}
+
+#lastname {
+    margin-top: 20px;
+    display:inline-block;
+    background-color:#f2f2f2;
+    width:248px;
+    height: 40px;
+    white-space:nowrap;
+}
+
+#middlename {
+    margin-top:20px;
+    display:inline-block;
+    background-color:#f2f2f2;
+    width:240px;
+    height: 40px;
+    white-space:nowrap;
+}
+.content .name {
+    margin-right:110px;
+    font-size: 25px;
+    float:right;
+    display:inline-block;
+    white-space:nowrap;
+    
+}
+
+input[type="text"]{
+    font-weight:600;
+            font-size:16px;
+            Padding-left:10px;
+    box-shadow:none;
+    border:0px;
+}
+.content .name-form {
+    display:inline-block;
+    white-space:nowrap;
+    
+}
+
+.content .name-form b {
+    margin-right:10px;
+    font-size:14px;
+    text-align: left;
+    color: #333333;
+    font-weight:100;
+}
+
+.content .contacts {
+    margin-top:40px;
+    float:center;
+    display:inline;
+}
+
+.content .contacts .contact-info-text {
+    text-align:center;
+    font-size:22px;
+    font-weight:700;
+}
+
+.content .telephone-form {
+    margin-top:60px;
+    margin-left:px;
+    display:inline-block;
+    float:left;
+    white-space:nowrap;
+}
+
+.content .telephone-form img {
+    position:absolute;
+    background-color:#e6e6e6;
+    margin-top:px;
+    padding:15px;
+}
+
+.content .telephone-form textarea {
+    max-width:210px;
+    max-height:38px;
+    display:inline-block;
+    background-color:#f2f2f2;
+    text-align:center;
+    padding-top:8px;
+    font-family: "PT Sans";
+    font-size:25px;
+    font-weight:700;
+    vertical-align:middle;
+    border:0px;
+}
+
+
+.content .email-form {
+    margin-right:45px;
+    margin-left:200px;
+    margin-top:60px;
+    display:inline-block;
+    float:right;
+    white-space:nowrap;
+}
+
+.content .email-form textarea {
+    max-width:210px;
+    max-height:36px;
+    padding-top:4px;
+    display:inline-block;
+    background-color:#f2f2f2;
+    text-align:center;
+    font-family: "PT Sans";
+    font-size:25px;
+    font-weight:700;
+    vertical-align:middle;
+    border:0px;
+}
+
+.content .email-form img {
+    position:absolute;
+    background-color:#e6e6e6;
+    padding:15px;
+}
+
+.content .telephone-form b {
+    font-size: 17px;
+    margin-right: 10px;
+    font-weight:100;
+}
+
+.content .telephone-form .device-version {
+            display:none;
+        }
+
+.content .email-form b {
+    font-size: 17px;
+    margin-right:10px;
+    font-weight:100;
+}
+
+
+
+.content .sights {
+    margin-top:40px;
+    float:left;
+    display:inline-block;
+}
+.content .intro-text {
+    margin-bottom:20px;
+    font-size: 25px;
+    font-weight:600;
+}
+
+.content .emotions {
+    margin-top:40px;
+    display:inline-block;
+}
+
+.content .emotions .text-intro {
+    font-size: 25px;
+    font-weight:600;
+}
+
+.content .emotions textarea {
+    font-family: "PT Sans";
+    padding:20px;
+    border: 0px;
+    margin-top:50px;
+    background-color:#f3f3f3;
+    text-align:left;
+    font-size:18px;
+    font-weight:600;
+    width:940px;
+    height:140px;
+}
+
+input[type="submit"] {
+    margin-top:50px;
+    margin-right:122px;
+    background-color:#81b3d2;
+    display:block;
+    width:480px;
+    height:55px;
+    font-family: "PT Sans";
+    font-size:24px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:700;
+    color:white;
+    border:0px;
+    margin-left:-362px
+}
+
+.footer {
+  background-color:white;
+}
+
+.footer .text-1 {
+    font-size:29px;
+    font-weight:700;
+    float:left;
+    margin-top:100px;
+    margin-bottom:50px;
+    margin-left:140px;
+}
+
+.footer .text-2 {
+    float:right;
+    font-size:17px;
+    font-weight:500;
+    margin-top:100px;
+    margin-bottom:50px;
+    margin-right:144px;
+}
+
+.content .text-3 {
+    display:inline;
+    float:right;
+    margin-top:-30px
+   
+}
+
+.footer .icon-1 {
+    display:inline-block;
+    background-color:#81b3d2;
+    padding:25px;
+}
+
+.footer .icon-2 {
+    display:inline-block;
+    background-color:#81b3d2;
+    padding:25px;
+    padding-top:23px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.footer .icon-3 {
+    display:inline-block;
+    background-color:#81b3d2;
+    padding:25px;
+}
+
+.footer .icon-4 {
+    display:inline-block;
+    position:relative;
+    left:440px;
+    bottom: 55px;
+}
+
+.footer .social {
+    margin-top:80px;
+    
+}
+
+/* POP-UP CSS */
+
+#modal_form #text-b {
+    display:inline-block;
+    position:fixed;
+    left:50%;
+    top: 45%;
+    margin-top: -98px;
+    margin-left:-145px;
+    width:658px;
+    height:110px;
+    background-color:#ffffff;
+    padding-top:30px;
+    font-size:30px;
+}
+
+#modal_form #text {
+    position:fixed;
+    margin-top: 0px;
+    margin-left:-145px;
+    left:50%;
+    top:45%;
+    width:658px;
+    background-color:#ffffff;
+    font-size:14px;
+    display:inline-block;
+    padding-bottom:40px;
+}
+
+#modal_form {
+	width: 640px; 
+	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #f3f3f3;
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 20px 10px;
+}
+
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+    padding-top:15px;
+    vertical-align:center;
+    color:white;
+    font-size: 25px;
+    font-weight:600;
+    text-align:center;
+    background-color:#81b3d2;
+	width: 450px;
+	height: 45px;
+	position: absolute;
+	top: 240px;
+	right: 100px;
+	cursor: pointer;
+	display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+ #text-b1 {
+    display:none;
+    position:fixed;
+    left:50%;
+    top: 45%;
+    margin-top: -98px;
+    margin-left:-145px;
+    width:658px;
+    height:110px;
+    background-color:#ffffff;
+    padding-top:30px;
+    font-size:30px;
+}
+
+#text1 {
+    position:fixed;
+    margin-top: 0px;
+    margin-left:-145px;
+    left:50%;
+    top:45%;
+    width:658px;
+    background-color:#ffffff;
+    font-size:14px;
+    display:none;
+    padding-bottom:40px;
+}
+
+
+div.errorMsg {color: red}
+.invalidElem {border: medium solid red}
+

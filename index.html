@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     
+     <script type="text/javascript" src="jquery.validate.min.js"></script>
+      
+     <script type="text/javascript" src="myscript.js"></script>
+     
+  <meta charset="utf-8" />
+  <title>HTML5</title>
+     <link rel="stylesheet" href="styles.css">
+     
+     <link href="media-queries.css" rel="stylesheet" type="text/css">
+     
+     <link href="media-queries-phone.css" rel="stylesheet">
+     
+  <!--[if IE]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style>
+   article, aside, details, figcaption, figure, footer,header,
+   hgroup, menu, nav, section { display: block;}
+  </style>
+ </head>
+ <body>
+     <div class="header">
+     
+         <!-- HEADER MENU -->
+         
+     <div class="menu layout-positioner">
+         <div class="menu main"><a href=#>Главная</a></div>
+         <div class="menu media"><a href=#>Фото и Видео</a></div>
+         <div class="menu academy"><a href=#>HTML Academy</a></div>
+         <div class="menu reply"><a href=#>Форма Отзыва</a></div>
+         <div class="logo"><img src="logotype-desktop.png"></div>
+         <div class="logo-mobile"><img src="logotyle-mobile.png"></div></div>
+     </div>
+     <div class="sedona-image layout-positioner"><img src="sedona-form-desktop.jpg"></div>
+     
+     <!-- RATES FORM AND START DESCRIPTION -->
+     
+     <div class="content layout-positioner"><b>Оставьте свой отзыв</b><br>
+         <span class="content text-desc">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</span><br>
+         <div class="content-row">
+             <div class="content rate"><span>Ваше Общее Впечатление:</span><br>
+         <div class="content rate-form l">
+             <ul>
+             <form name="rates" action="handler.php">
+                 <li></li>
+                 <div class="radio1"><input type="radio" name="rate1" value="grate" id="radio1" checked>
+                     <label for="radio1"></label><b>Скорее положительное</b></div><br>
+                 <li></li>
+                 <div class="radio2"><input type="radio" name="rate1" value="brate" id="radio2">
+                     <label for="radio2"></label><b>Скорее отрицательное</b></div><br>
+                 <li></li>
+                 <div class="radio3"><input type="radio" name="rate1" value="mrate" id="radio3">
+                     <label for="radio3"></label><b>Затрудняюсь ответить<br></b></div>
+             </form>
+             </ul>
+         </div>
+         </div>
+             
+             <!-- NAME FORM -->
+             
+             <div class="content name"><span>Представьтесь:</span><br>
+         <div class="content name-form">
+             <form id="nameform" name="name-post" method="post" action="handler.php">
+                 <label for="name1"><b>Имя<sup>*</sup>:</b></label><input type="text" size="40" id="name1" ><br>
+             <b>Фамилия<sup>*</sup>:</b><input type="text" size="40" id="lastname"><label for="middlename"><br>
+                 <b>Отечество<sup>*</sup>:</b></label><input type="text" size="20" id="middlename"><br>
+         </form>
+         </div>
+         </div>
+         </div>
+         
+         <!--CONTACTS -->
+         
+     <div class="content contacts">
+         <div class="contact-info-text">Контактная информация:</div>
+         
+     <div class="content telephone-form"><span class="device-version">Контактный телефон<sup>*</sup></span><form class="tf" name="contactform-tel" id="tel-form">
+         <b>Телефон<sup>*</sup>:</b><textarea name="telephone1" rows="2" cols="30" placeholder="Введите телефон" ></textarea><img src="C:\Users\Andrew\Desktop\Verstka\phone.png"></form></div>
+         <div class="content email-form"><form class="email1" name="contactform-email" id="email-form"><span><b>Электронная почта<sup>*</sup>:</b></span><textarea rows="2" cols="30" placeholder="Введите e-mail" ></textarea><img src="C:\Users\Andrew\Desktop\Verstka\mail.png"></form></div>
+         </div>
+         
+         <!-- SIGHTSEENS -->
+         
+         <div class="content sights"><span class="content intro-text">Посещенные<br> достопримечательности:</span>
+         <div class="content sight-form">
+         <form name="post-sights" method="post">
+             <span class="checkbox1">
+                 <input type="checkbox" id="checkbox1" hidden><label for="checkbox1"></label><span class="text">Мост Дьявола</span></span>
+             <span class="checkbox2">
+                 <input type="checkbox" id="checkbox2" hidden><label for="checkbox2"></label><span class="text">Гора-Колокол</span></span>
+             <span class="checkbox3">
+                 <input type="checkbox" id="checkbox3" hidden><label for="checkbox3"></label><span class="text">Слайд-Парк</span></span>
+             <span class="checkbox4">
+                 <input type="checkbox" id="checkbox4" hidden><label for="checkbox4"></label><span class="text">Красные Скалы</span></span></form></div>
+         </div>
+         
+         <!-- DESCRIPTION TEXTAREA -->
+         
+         <div class="content emotions"><span class="text-intro">Опишите свои эмоции</span>
+         <div class="content emotions-form"><textarea rows="10" cols="50" placeholder="Опишите подробно все свои восторги"></textarea></div>
+             <div class="content button"><a href="#" id="go"><input type="submit" value="Отправить Отзыв"></a>
+             </div>
+             <div class="content text-3">* - Обязательные поля</div><br>
+     </div>
+     </div>
+     
+     <!-- FOOTER -->
+     
+     <div class="footer layout-positioner">
+         <div class="footer text-1">#VISITSEDONA</div>
+         <div class="footer text-2">РАЗРАБОТАНО</div>
+         <div class="footer social">
+     <div class="footer icon-1"><img src="icon-twitter.png"></div>
+     <div class="footer icon-2"><img src="icon-facebook.png"></div>
+     <div class="footer icon-3"><img src="icon-youtube.png"></div>
+         </div>
+     <div class="footer icon-4"><img src="htmlacademy.png"></div>
+     </div>
+     
+     <!-- POP-UP WINDOW -->
+     
+     <div id="modal_form">
+         <span id="modal_close">Закрыть окно</span>
+         <span id="text-b"><b>Ваш Отзыв Отправлен!</b></span><br>
+         <span id="text">
+         Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.<br></span>
+     </div>
+     
+         <span id="text-b1"><b>Что-то пошло не так!</b></span><br>
+         <span id="text1">
+         Проверьте поля, выделенные красным.<br>Скорее всего, вы забыли их заполнить.<br></span>
+     
+     <div id="overlay"></div>
+ </body>
+</html>
