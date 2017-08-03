@@ -257,8 +257,9 @@ and (min-width : 320px)
     
     .sedona-image {
         background-color:white;
-        padding-top:290px;
-        
+        margin-bottom:-1px;
+        margin-top:1px;
+        padding-top:0px;
     }
     
     .menu .main {
@@ -268,16 +269,17 @@ and (min-width : 320px)
         margin:auto;
 }
     .menu {
+        display:none;
         color:white;
         padding:0;
         height:40px;
         max-width:320px;
-        display:block;
         flex-direction: column;
         background-color:#81b3d2;
 }
 
 .menu .media {
+    display:none;
     width:320px;
     border-bottom:1px solid black;
     font-size:19px;
@@ -286,6 +288,7 @@ and (min-width : 320px)
 }
 
 .menu .academy {
+    display:none;
     width:320px;
     border-bottom:1px solid black;
     font-size:19px;
@@ -293,6 +296,7 @@ and (min-width : 320px)
 }
 
 .menu.reply {
+    display:none;
     width:320px;
     border-bottom:1px solid black;
     top:-3px;
@@ -433,4 +437,26 @@ and (min-width : 320px)
         #line3-tablet {
             display
         }
+        .menu-mobile  li {
+            display:block;
+        }
+        
+.hamburger-header {
+    display:block;
+}
+        
+.menu-mobile {
+    display:block;
+}
+
+.hamburger {
+    display:block;
+    left:280px;
+}
+
+.cross {
+    display:block;
+    left: 270px;
+}
+        
 }

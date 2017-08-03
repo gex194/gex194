@@ -438,6 +438,9 @@ input[type="text"]{
 }
 
 input[type="submit"] {
+    position:relative;
+    top:560px;
+    left:160px;
     margin-top:50px;
     margin-right:122px;
     background-color:#81b3d2;
@@ -452,6 +455,10 @@ input[type="submit"] {
     color:white;
     border:0px;
     margin-left:-362px
+}
+
+input[type="submit"]:hover {
+    background-color:skyblue;
 }
 
 .footer {
@@ -516,112 +523,6 @@ input[type="submit"] {
     
 }
 
-/* POP-UP CSS */
-
-#modal_form #text-b {
-    display:inline-block;
-    position:fixed;
-    left:50%;
-    top: 45%;
-    margin-top: -98px;
-    margin-left:-145px;
-    width:658px;
-    height:110px;
-    background-color:#ffffff;
-    padding-top:30px;
-    font-size:30px;
-}
-
-#modal_form #text {
-    position:fixed;
-    margin-top: 0px;
-    margin-left:-145px;
-    left:50%;
-    top:45%;
-    width:658px;
-    background-color:#ffffff;
-    font-size:14px;
-    display:inline-block;
-    padding-bottom:40px;
-}
-
-#modal_form {
-	width: 640px; 
-	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
-	border-radius: 5px;
-	border: 3px #000 solid;
-	background: #f3f3f3;
-	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-	left: 50%; /* пoлoвинa экрaнa слевa */
-	margin-top: -150px;
-	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
-	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
-	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
-	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
-	padding: 20px 10px;
-}
-
-/* Кнoпкa зaкрыть для тех ктo в тaнке) */
-#modal_form #modal_close {
-    padding-top:15px;
-    vertical-align:center;
-    color:white;
-    font-size: 25px;
-    font-weight:600;
-    text-align:center;
-    background-color:#81b3d2;
-	width: 450px;
-	height: 45px;
-	position: absolute;
-	top: 240px;
-	right: 100px;
-	cursor: pointer;
-	display: block;
-}
-/* Пoдлoжкa */
-#overlay {
-	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
-	position:fixed; /* всегдa перекрывaет весь сaйт */
-	background-color:#000; /* чернaя */
-	opacity:0.8; /* нo немнoгo прoзрaчнa */
-	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
-	filter:alpha(opacity=80);
-	width:100%; 
-	height:100%; /* рaзмерoм вo весь экрaн */
-	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
-	left:0;
-	cursor:pointer;
-	display:none; /* в oбычнoм сoстoянии её нет) */
-}
-
- #text-b1 {
-    display:none;
-    position:fixed;
-    left:50%;
-    top: 45%;
-    margin-top: -98px;
-    margin-left:-145px;
-    width:658px;
-    height:110px;
-    background-color:#ffffff;
-    padding-top:30px;
-    font-size:30px;
-}
-
-#text1 {
-    position:fixed;
-    margin-top: 0px;
-    margin-left:-145px;
-    left:50%;
-    top:45%;
-    width:658px;
-    background-color:#ffffff;
-    font-size:14px;
-    display:none;
-    padding-bottom:40px;
-}
-
 /* LINES */
 #line1 {
     position:relative;
@@ -657,3 +558,48 @@ input[type="submit"] {
 div.errorMsg {color: red}
 .invalidElem {border: medium solid red}
 
+.hamburger-header {
+    display:none;
+}
+
+.menu-mobile {
+    display:none;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    width: 320px;
+    height:240px;
+    margin:0 auto;
+    margin-top:-30px;
+    background-color:#81b3d2;
+}
+
+.menu-mobile li {
+    display:none;
+    border-bottom:2px solid black;
+    padding:15px 0 15px 0;
+    width:320px;
+    margin-left:-40px;
+}
+
+.menu-mobile li:hover {
+    background-color:skyblue;
+}
+
+.hamburger {
+    display:none;
+    position:relative;
+    top:40px;
+    left:140px;
+    border:0px;
+    background-color:transparent;
+}
+
+.cross {
+    display:none;
+    border:0px;
+    background-color:transparent;
+    position:relative;
+    top:30px;
+    left:120px;
+}
