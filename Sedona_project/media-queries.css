@@ -1,134 +1,63 @@
-@media only screen 
-and (min-width : 320px) 
-    and (max-width : 749px) {
-        .layout-positioner {
-            width:320px;
-        }
-        
-        input[type="text"] {
-            font-weight:600;
-            font-size:16px;
-            Padding-left:10px;
-        }
-        
-        .content {
-            width:320px;
-        }
-        
-        .content .rate {
-            position:relative;
-            top:580px;
-        width:320px;
+
+@media screen and (min-width : 750px) 
+and (max-width : 1024px)  {
+    .layout-positioner {
+        width:768px;
+    }
+    
+    .content {
+        max-width:768px;
+    }
+    
+    .content .rate {
+        width:200px;
         height:300px;
-        display:flex;
-        margin:auto;
+        display:inline-block;
+        margin-left:0px;
         white-space:nowrap;
-            border-bottom:1px solid #f2f2f2;
     }
     
     .content .rate span {
-        position:relative;
-        left:0px;
         font-weight:600;
-        font-size:22px;
+        font-size:23px;
+        float:left;
+        margin-left:30px;
     }
-        
-        .content .contacts .contact-info-text {
-            font-size:22px;
-            margin-bottom:-28px
-        }
     
     .content .name {
-        position:relative;
-        border-bottom:1px solid #f2f2f2;
-        top:-360px;
-        display:flex;
-        margin:auto;
-        margin-bottom:10px
-        -web-kit-order:1;
+        margin-right:200px;
+        width:150px;
+        height:220px;
+        display:inline-block;
+        float:right;
     }
-        
-        .content .name span {
-            font-weight:600;
-        }
-        #nameform {
-            text-align:left;
-            padding-left:10px
-        }
-        
-        #name1 {
-    margin-top: 20px;
-    display:inline-block;
-    background-color:#f2f2f2;
-    width:249px;
-    height: 40px;
-    white-space:nowrap;
     
-}
-
-#lastname {
-    margin-top: 20px;
-    display:inline-block;
-    background-color:#f2f2f2;
-    width:211px;
-    height: 40px;
-    white-space:nowrap;
-}
-
-#middlename {
-    margin-top:20px;
-    display:inline-block;
-    background-color:#f2f2f2;
-    width:205px;
-    height: 40px;
-    white-space:nowrap;
-        }
-        
-        .content .intro-text {
-            font-size:20px
-        }
-        
-        .content .emotions .text-intro {
-            font-size:20px;
-        }
+    .content .name span {
+        font-weight:600;
+    }
     
     .content .telephone-form textarea {
-        text-align:left;
         margin: auto;
         align-content: center;
         max-width:none;
         width:95%;
         display:block;
     }
-        
-        .content .contacts {
+    
+    .content .telephone-form b {
+        display:none;
+    }
+    
+    .content .telephone-form .device-version {
+        display:inline;
             position:relative;
-            top:-340px;
-            border-bottom:1px solid #f2f2f2;
         }
     
     .content .email-form {
         margin:auto;
     }
-        .content .email-form b {
-            position:relative;
-            right:60px;
-        }
-        
-         .content .telephone-form b {
-            display:none;
-            position:relative;
-            right:108px;
-        }
-        
-        .content .telephone-form .device-version {
-            display:inline;
-            position:relative;
-            left:-63px;
-        }
     
     .content .email-form textarea {
-        text-align:left;
         margin: auto;
         align-content: center;
         max-width:none;
@@ -136,10 +65,12 @@ and (min-width : 320px)
         display:block;
     }
     
+    content .email-form {
+    }
     
     .content .email-form img {
         bottom:42px;
-        left:133px;
+        left:343px;
     position:relative;
     background-color:#e6e6e6;
     padding:15px;
@@ -147,18 +78,18 @@ and (min-width : 320px)
     
     .content .telephone-form img {
         bottom:48px;
-        left:133px;
+        left:343px;
     position:relative;
     background-color:#e6e6e6;
     padding:15px;
     }
     
     input[type="submit"] {
-    margin-top:10px;
-    margin-right:0px;
+    margin-top:50px;
+    margin-right:53px;
     background-color:#81b3d2;
     display:block;
-    width:278px;
+    width:320px;
     height:55px;
     font-family: "PT Sans";
     font-size:24px;
@@ -167,7 +98,7 @@ and (min-width : 320px)
     font-weight:700;
     color:white;
     border:0px;
-    margin-left:1px
+    margin-left:-362px
 }
     
     .footer .text-1 {
@@ -176,38 +107,30 @@ and (min-width : 320px)
     float:left;
     margin-top:77px;
     margin-bottom:50px;
-    margin-left:88px;
-        margin-right:60px;
+    margin-left:20px;
 }
     
     .footer .text-2 {
-    position:relative;
-    right:106px;
+    float:right;
     font-size:17px;
     font-weight:500;
     margin-top:80px;
     margin-bottom:50px;
-    margin-right:14px;
+    margin-right:54px;
 }
     
     .content .text-3 {
-        display:none;
         width:180px;
         height:20px;
+    display:block;
     margin-top:-30px;
     margin-right:17px;
 }
-        .footer .social {
-            background-color:transparent;
-            position:relative;
-            left:66px;
-        }
-        
+    
     .footer .icon-1 {
     display:inline-block;
     background-color:#81b3d2;
     padding:15px;
-        margin-left:30p
 }
 
 .footer .icon-2 {
@@ -228,15 +151,15 @@ and (min-width : 320px)
     .footer .icon-4 {
     display:inline-block;
     position:relative;
-    left:120px;
-    bottom: -25px;
+    left:350px;
+    bottom: 55px;
 }
-        
     .content .emotions textarea {
-        width:238px;
+        width:698px;
     }
     
     .content {
+        width:100%;
         margin:0 auto;
     }
     
@@ -244,88 +167,73 @@ and (min-width : 320px)
         max-width:100%;
         height:auto;
     }
-        .logo img {
-            display:none;
-        }
     
     .logo-mobile {
-        display:block;
-        
-        position:relative;
-        top:0px;
+        display:none;
+    }
+    
+    .logo {
+        height:100px;
+        width:200px;
+        background-repeat:no-repeat;
+        background-position:center;
+        top:-62px;
+        left:290px;
     }
     
     .sedona-image {
-        background-color:white;
-        padding-top:290px;
+        margin-top:-113px;
         
     }
     
     .menu .main {
-        width:320px;
-        border-bottom:1px solid black;
-    font-size:19px;
-        margin:auto;
-}
-    .menu {
-        color:white;
-        padding:0;
-        height:40px;
-        max-width:320px;
-        display:block;
-        flex-direction: column;
-        background-color:#81b3d2;
+        font-size:14px;
+    float:left;
+    margin-left:50px;
 }
 
 .menu .media {
-    width:320px;
-    border-bottom:1px solid black;
-    font-size:19px;
-    margin:auto;
-    
+    font-size:14px;
+    margin-left:80px;
+    float:left;
 }
 
 .menu .academy {
-    width:320px;
-    border-bottom:1px solid black;
-    font-size:19px;
-    margin:auto;
+    font-size:14px;
+    float:right;
+    margin-right:30px;
 }
 
 .menu.reply {
-    width:320px;
-    border-bottom:1px solid black;
-    top:-3px;
-    display:block;
-    font-size:19px;
-    margin:auto;
-    
+    font-size:14px;
+    margin-right:40px;
+    float:right;
 }
-        .content .sights {
-            border-bottom:1px solid #f2f2f2;
-        }
     
-.checkbox1 {
-    margin-left:3px;
+    .checkbox1 {
         position:relative;
+        left:40px;
         display:inline-block;
 }
 
 .checkbox2 {
     position:relative;
+    left:90px;
     display:inline-block;
 }
 
 .checkbox3 {
-    margin-left:-14px;
     position:relative;
-    display:inline-block;
+    left:-105px;
+    top:44px;
+    display:block;
 }
     
  .checkbox4 {
-     margin-left:-97px;
      position:relative;
         display:inline-block;
+     left:180px;
+     top:-20px
     }
 
     
@@ -336,24 +244,24 @@ and (min-width : 320px)
     #modal_form #text-b {
     display:inline-block;
     position:fixed;
-    left:37%;
+    left:30%;
     top: 45%;
     margin-top: -98px;
-    margin-left:-79px;
-    width:315px;
-    height:100px;
+    margin-left:-145px;
+    width:658px;
+    height:110px;
     background-color:#ffffff;
+    padding-top:30px;
     font-size:30px;
 }
 
 #modal_form #text {
     position:fixed;
     margin-top: 0px;
-    margin-left:-68px;
-    left:35%;
-    top:48%;
-    width:314px;
-    height:50px;
+    margin-left:-145px;
+    left:30%;
+    top:45%;
+    width:658px;
     background-color:#ffffff;
     font-size:14px;
     display:inline-block;
@@ -361,14 +269,14 @@ and (min-width : 320px)
 }
 
 #modal_form {
-	width: 300px; 
+	width: 640px; 
 	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
 	border-radius: 5px;
 	border: 3px #000 solid;
 	background: #f3f3f3;
 	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
 	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-	left: 48%; /* пoлoвинa экрaнa слевa */
+	left: 30%; /* пoлoвинa экрaнa слевa */
 	margin-top: -150px;
 	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
 	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
@@ -386,11 +294,11 @@ and (min-width : 320px)
     font-weight:600;
     text-align:center;
     background-color:#81b3d2;
-	width: 320px;
+	width: 450px;
 	height: 45px;
 	position: absolute;
 	top: 240px;
-	right: 0px;
+	right: 100px;
 	cursor: pointer;
 	display: block;
 }
@@ -409,5 +317,33 @@ and (min-width : 320px)
 	cursor:pointer;
 	display:none; /* в oбычнoм сoстoянии её нет) */
 }
-        
+    #line1 {
+        display:none;
+    }
+    
+    #line2 {
+        display:none;
+    }
+    
+    #line3 {
+        display:none;
+    }
+    
+    #line1-tablet {
+        top:932px;
+        left:11px;
+        position:relative; display:inline;
+    }
+    
+    #line2-tablet {
+        top:1292px;
+        left:11px;
+       position:relative; display:inline;
+    }
+    
+    #line3-tablet {
+        top:1572px;
+        left:11px;
+       position:relative; display:inline;
+    }
 }

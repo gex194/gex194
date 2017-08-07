@@ -24,9 +24,34 @@
   </style>
  </head>
  <body>
-     <div class="header">
      
-         <!-- HEADER MENU -->
+     <div class="hamburger-header layout-positioner">
+     <button class="hamburger"><img src="img/icon-menu.png"></button>
+     <button class="cross"><img src="img/icon-cross.png"></button>
+     </div>
+     
+     <div class="menu-mobile layout-positioner">
+         <ul>
+             <a href="#"><li>ГЛАВНАЯ</li></a>
+             <a href="#"><li>ФОТО И ВИДЕО</li></a>
+             <a href="#"><li>ФОРМА ОТЗЫВА</li></a>
+             <a href="#"><li>HTML ACADEMY</li></a>
+         </ul>
+     </div>
+     
+     <div class="header">
+         
+         <!--- LINES -->
+         <span class="lines" id="line1"><img src="img/line.png"></span>
+         <span class="lines" id="line2"><img src="img/line.png"></span>
+         <span class="lines" id="line3"><img src="img/line.png"></span>
+         
+         <span class="lines" id="line1-tablet"><img src="img/line-tablet.png"></span>
+         <span class="lines" id="line2-tablet"><img src="img/line-tablet.png"></span>
+         <span class="lines" id="line3-tablet"><img src="img/line-tablet.png"></span>
+    
+     
+         <!--- HEADER MENU -->
          
      <div class="menu layout-positioner">
          <div class="menu main"><a href=#>Главная</a></div>
@@ -78,10 +103,13 @@
          
      <div class="content contacts">
          <div class="contact-info-text">Контактная информация:</div>
-         
-     <div class="content telephone-form"><span class="device-version">Контактный телефон<sup>*</sup></span><form class="tf" name="contactform-tel" id="tel-form">
-         <b>Телефон<sup>*</sup>:</b><textarea name="telephone1" rows="2" cols="30" placeholder="Введите телефон" ></textarea><img src="img/phone.png"></form></div>
-         <div class="content email-form"><form class="email1" name="contactform-email" id="email-form"><span><b>Электронная почта<sup>*</sup>:</b></span><textarea rows="2" cols="30" placeholder="Введите e-mail" ></textarea><img src="img/mail.png"></form></div>
+      <form class="cmxform" id="contact-form" method="get" action="">   
+     <div class="content telephone-form"><span class="device-version">Контактный телефон<sup>*</sup></span>
+         <b>Телефон<sup>*</sup>:</b><textarea id="tel-textarea" rows="2" cols="30" placeholder="Введите телефон" required digits></textarea><img src="img/phone.png"></div>
+         <div class="content email-form"><span><b>Электронная почта<sup>*</sup>:</b></span><textarea id="email-textarea" rows="2" type="email" cols="30" placeholder="Введите e-mail" required email></textarea><img src="img/mail.png"></div>
+         <div class="content button" id="go"><input type="submit" value="Отправить Отзыв">
+             </div>
+             </form>
          </div>
          
          <!-- SIGHTSEENS -->
@@ -103,8 +131,6 @@
          
          <div class="content emotions"><span class="text-intro">Опишите свои эмоции</span>
          <div class="content emotions-form"><textarea rows="10" cols="50" placeholder="Опишите подробно все свои восторги"></textarea></div>
-             <div class="content button"><a href="#" id="go"><input type="submit" value="Отправить Отзыв"></a>
-             </div>
              <div class="content text-3">* - Обязательные поля</div><br>
      </div>
      </div>
@@ -123,18 +149,5 @@
      </div>
      
      <!-- POP-UP WINDOW -->
-     
-     <div id="modal_form">
-         <span id="modal_close">Закрыть окно</span>
-         <span id="text-b"><b>Ваш Отзыв Отправлен!</b></span><br>
-         <span id="text">
-         Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.<br></span>
-     </div>
-     
-         <span id="text-b1"><b>Что-то пошло не так!</b></span><br>
-         <span id="text1">
-         Проверьте поля, выделенные красным.<br>Скорее всего, вы забыли их заполнить.<br></span>
-     
-     <div id="overlay"></div>
  </body>
 </html>
