@@ -163,6 +163,30 @@ and (max-width : 1024px)  {
         margin:0 auto;
     }
     
+    input[type="submit"] {
+    position:relative;
+    top:700px;
+    left:112px;
+    margin-top:50px;
+    margin-right:122px;
+    background-color:#81b3d2;
+    display:block;
+    width:480px;
+    height:55px;
+    font-family: "PT Sans";
+    font-size:24px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:700;
+    color:white;
+    border:0px;
+    margin-left:-362px
+}
+
+input[type="submit"]:hover {
+    background-color:skyblue;
+}
+    
     img {
         max-width:100%;
         height:auto;
@@ -336,13 +360,13 @@ and (max-width : 1024px)  {
     }
     
     #line2-tablet {
-        top:1292px;
+        top:1392px;
         left:11px;
        position:relative; display:inline;
     }
     
     #line3-tablet {
-        top:1572px;
+        top:1675px;
         left:11px;
        position:relative; display:inline;
     }
