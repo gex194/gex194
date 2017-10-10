@@ -622,7 +622,7 @@ position:relative;
     #button-reg {
         font-size:15pt;
         width:100%;
-        margin-right:300px;
+        margin-left:-350px;
         padding:10px;
         max-width:175px;
     }
@@ -648,6 +648,58 @@ position:relative;
     padding:0px;
         padding-top:70px;
 }
+}
+
+@media (min-width:470px) {
+    
+        .h2-font {
+    font-size:15pt;
+    text-transform: uppercase;
+    font-weight: 500;
+position:relative;
+    top:30px;
+    right:70px;
+}
+
+.h1-font {
+    font-size:40pt;
+    position:relative;
+    right:20px;
+    font-weight:600;
+}
+
+    
+    #button-reg {
+        font-size:15pt;
+        width:100%;
+        margin-right:300px;
+        padding:10px;
+        max-width:175px;
+        margin-left:0px;
+    }
+    #button-login {
+        width:100%;
+        max-width:17500px;
+        padding:10px;
+        padding-left:1px;
+        padding-right:260px;
+    }
+    
+    .prizes h1 {
+    float:left;
+    font-style:normal;
+    
+    font-size:30pt;
+    margin-top:;
+}
+     .logo-bottom {
+    width:100%;
+    background-color:#eaeaea;
+    height:210px;
+    padding:0px;
+        padding-top:70px;
+}
+    
 }
 
 @media (min-width: 576px) {
@@ -677,6 +729,7 @@ position:relative;
         padding-right:10px;
         max-width:200px;
         margin-right:230px;
+        margin-left:0px;
     }
     
     #button-login {
@@ -732,6 +785,7 @@ position:relative;
         max-width:200px;
         margin-right:130px;
         width:100%;
+        margin-left:0px;
     }
     
     #button-login {
@@ -809,6 +863,7 @@ position:relative;
     padding:11px 80px;
     background-color:#ff3668;
     cursor:pointer;
+        margin-left:0px;
 }
     .logo-bottom {
     width:100%;
@@ -871,6 +926,7 @@ position:relative;
     padding:11px 80px;
     background-color:#ff3668;
     cursor:pointer;
+        margin-left:0px;
 }
   .logo-bottom {
     width:100%;
