@@ -87,7 +87,8 @@ a, a:hover {
 
 #cross {
     position:relative;
-    left:260px;
+    left:130px;
+    top:-60px;
 }
 
 
@@ -109,6 +110,8 @@ a, a:hover {
     font-weight:400;
     cursor:pointer;
     border:0px;
+    width:420px;
+    height:65px;
 }
 
 .reg-form li {
@@ -127,7 +130,7 @@ a, a:hover {
 .btn2 {
     box-shadow: 0 0 90px;
     position:relative;
-    left:-18px;
+    left:-20px;
     margin-top:20px;
     display:inline-block;
     padding:23px 69px;
@@ -138,10 +141,12 @@ a, a:hover {
     font-weight:400;
     cursor:pointer;
     border:0px;
+    width:420px;
+    height:65px;
 }
 #logo {
-    bottom:-5px;
-    left:-320px;
+    bottom:3px;
+    left:-350px;
     position:relative;
     cursor: pointer;
 }
@@ -263,12 +268,12 @@ input[type="checkbox"] + label {
     border:1px solid #d2d2d2;
     cursor:pointer;
     vertical-align: middle;
-    background:url(img/tick.png) center no-repeat;
+    background:url(../img/tick.png) center no-repeat;
     transition:all .2s;
 }
 
 input[type="checkbox"]:checked + label {
-    background: url(img/tick.png) -19px top no-repeat;
+    background: url(../img/tick.png) -19px top no-repeat;
 }
 
 span {

@@ -648,6 +648,11 @@ position:relative;
     padding:0px;
         padding-top:70px;
 }
+    #cross {
+    position:relative;
+    left:60px;
+    top:-60px;
+}
 }
 
 @media (min-width:470px) {
@@ -699,7 +704,11 @@ position:relative;
     padding:0px;
         padding-top:70px;
 }
-    
+    #cross {
+    position:relative;
+    left:0px;
+    top:-60px;
+}
 }
 
 @media (min-width: 576px) {
@@ -755,6 +764,12 @@ position:relative;
     padding:0px;
         padding-top:70px;
 }
+    
+    #cross {
+    position:relative;
+    left:0px;
+    top:-60px;
+}
 }
 
 @media (min-width: 768px) {
@@ -809,6 +824,12 @@ position:relative;
     height:310px;
     padding-top:70px;
 }
+    #cross {
+    position:relative;
+    left:100px;
+    top:-60px;
+}
+    
 }
 
 @media (min-width: 992px) {
@@ -872,12 +893,24 @@ position:relative;
     padding:40px;
         padding-top:70px;
 }
+    
+    #cross {
+    position:relative;
+    left:130px;
+    top:-60px;
+}
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
+    
+    #cross {
+    position:relative;
+    left:130px;
+    top:-60px;
+}
     
     .h2-font {
     font-size:30pt;
@@ -5444,11 +5477,11 @@ button.close {
 }
 
 .carousel-control-prev-icon {
-  background-image: url(/img/arrow-black-left.png);
+  background-image: url(../img/arrow-black-left.png);
 }
 
 .carousel-control-next-icon {
-  background-image: url(/img/arrow-black-right.png);
+  background-image: url(../img/arrow-black-right.png);
 }
 
 .carousel-indicators {
