@@ -1,5 +1,6 @@
 # 💫 About Me:
-Javascript/Typescript developer with over 6+ years of experience.
+Javascript/Typescript developer with over 6+ years of experience. Also had some experience with C# ASP .NET, working as a fullstack for about 1,5 years.
+## 📺 Frontend Stack
 ### Frameworks:
 - React
 - Vue
@@ -10,8 +11,19 @@ Javascript/Typescript developer with over 6+ years of experience.
 - API: Axios
 - 3D: Three.js
 - Canvas: Pixi.js
+
+## 🧰 Backend Stack:
+### Frameworks:
+- ASP .NET
+### ORM:
+- Entity Framework
+### DB:
+- T-SQL
+- MySQL
+- PostgreSQL
   
-I'm currently creating a 2D game using Unity. This is my main pet-project for now.
+I'm currently creating a 2D game using Unity. This is my main pet-project for now. 
+#### You can find all featured repos below.
 
 
 ## 🌐 Socials:
@@ -24,10 +36,3 @@ I'm currently creating a 2D game using Unity. This is my main pet-project for no
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=gex194&theme=radical&no-frame=false&no-bg=true&margin-w=4)
-
-
-
----
-[![](https://visitcount.itsvg.in/api?id=gex194&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
