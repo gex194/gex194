@@ -12,7 +12,7 @@ Javascript/Typescript developer with over 6+ years of experience. Also had some 
 - 3D: Three.js
 - Canvas: Pixi.js
 
-## 🧰 Backend Stack:
+## 🧰 Backend Stack
 ### Frameworks:
 - ASP .NET
 ### ORM:
@@ -23,7 +23,7 @@ Javascript/Typescript developer with over 6+ years of experience. Also had some 
 - PostgreSQL
   
 I'm currently creating a 2D game using Unity. This is my main pet-project for now. 
-#### You can find all featured repos below.
+#### You can find all featured (pinned) repos below.
 
 
 ## 🌐 Socials:
