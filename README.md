@@ -1,5 +1,17 @@
 # 💫 About Me:
-I'm currently creating various games using Godot Engine
+Javascript/Typescript developer with over 6+ years of experience.
+### Frameworks:
+- React
+- Vue
+### Libs:
+- State management: Redux, Redux-thunk, MobX, zustand, pinia
+- Routing: React-router, vue-router
+- UI: Material UI, Chakra UI, Vuetify
+- API: Axios
+- 3D: Three.js
+- Canvas: Pixi.js
+  
+I'm currently creating a 2D game using Unity. This is my main pet-project for now.
 
 
 ## 🌐 Socials:
